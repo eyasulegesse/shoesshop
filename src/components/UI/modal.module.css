@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  top: 10vh;
+  left: 30%;
+  background-color: #fff;
+  width: 500px;
+  border-radius: 14px;
+  z-index: 30px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
+  animation: slide-down 300ms ease-out forwards;
+}
+h3 {
+  color: #ad8e70;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+  color: #ad8e70;
+}
+.total {
+  text-align: right;
+}
+.total span {
+  padding-right: 5px;
+  font-weight: bold;
+  color: #ad8e70;
+}
+.action {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

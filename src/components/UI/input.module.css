@@ -1,0 +1,15 @@
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.input label {
+  margin-right: 6px;
+  color: #ad8e70;
+}
+.input input {
+  background: transparent;
+  border: 2px solid #ad8e70;
+  border-radius: 10px;
+  padding-left: 10px;
+}

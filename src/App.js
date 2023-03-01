@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Layout/header';
+import HeaderImage from './components/Layout/headerImage';
+import Shoes from './components/shoes/shoes';
+import Modal from './components/UI/modal';
+import CartProvider from './store/CartProvider';
 
 function App() {
+  const [isModalView, setIsModalView] = useState(false);
+  const viewCartHandler = () => {
+    setIsModalView(true);
+  };
+  const closeCartHandler = () => {
+    setIsModalView(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      {isModalView && <Modal closeCart={closeCartHandler} />}
+
+      <Header viewCart={viewCartHandler} closeCart={closeCartHandler} />
+      <HeaderImage />
+
+      <Shoes />
+    </CartProvider>
   );
 }
 

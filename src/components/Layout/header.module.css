@@ -1,0 +1,14 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8%;
+
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
+}
+h1 {
+  color: #cc021c;
+  font-weight: bold;
+  text-transform: uppercase;
+}

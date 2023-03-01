@@ -1,0 +1,9 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+  color: #ad8e70;
+}

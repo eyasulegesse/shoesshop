@@ -1,0 +1,11 @@
+.listitem {
+  width: 330px;
+  margin: auto;
+  padding: auto;
+}
+.listitem h3 {
+  color: #ad8e70;
+}
+.listitem .price {
+  color: #ad8e70;
+}
