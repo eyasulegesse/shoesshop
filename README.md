@@ -3,4 +3,4 @@
 => functional components
 => props
 => states
-=> Hooks (useContext,usestate , Ref and etc)
+=> Hooks (useContext,useState , Ref and etc)
